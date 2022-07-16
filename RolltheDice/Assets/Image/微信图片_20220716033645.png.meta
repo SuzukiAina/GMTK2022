@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 200378afced08ac4a9b6a581818c97b7
+=======
+guid: 43b00d64062b50046b24451d0c97617c
+>>>>>>> parent of 1f32438 (Merge branch 'main' of https://github.com/SuzukiAina/GMTK2022)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +11,11 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+<<<<<<< HEAD
     sRGBTexture: 0
+=======
+    sRGBTexture: 1
+>>>>>>> parent of 1f32438 (Merge branch 'main' of https://github.com/SuzukiAina/GMTK2022)
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
