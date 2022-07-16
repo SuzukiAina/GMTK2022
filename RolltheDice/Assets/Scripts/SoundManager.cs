@@ -51,13 +51,18 @@ public class SoundManager : MonoBehaviour
     // Play the plane takeoff sfx
     public void PlayPlane()
     {
-        audioSource[0].clip = bgm_clips[2];
-        audioSource[0].loop = false;
-        audioSource[0].Play();
+        audioSource[1].PlayOneShot(sfx_clips[0]);
     }
 
-    public void PlaySFX(int sfxIdx)
+    // Play the ordinary click sfx
+    public void PlayClick()
     {
-       
+        audioSource[1].PlayOneShot(sfx_clips[0]);
+    }
+
+    // Play the dice rolling sfx
+    public void PlayRoll()
+    {
+        audioSource[1].PlayOneShot(sfx_clips[0]);
     }
 }
