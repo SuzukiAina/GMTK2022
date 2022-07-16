@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    public int condition;
+    public int checkNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,4 +14,17 @@ public class CheckPoint : MonoBehaviour
     {
         
     }
+
+    public bool Check(int number)
+    {
+        if (checkNumber == number)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
 }

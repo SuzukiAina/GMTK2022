@@ -9,6 +9,11 @@ public class Dice : MonoBehaviour
     [SerializeField]private float _rollSpeed = 3;
 
     private bool _isMoving;
+    public bool allowForward;
+    public bool allowBackward;
+    public bool allowRight;
+    public bool allowLeft;
+    
 
     public UnityEvent StartMoving;
     public UnityEvent StopMoving;
@@ -23,12 +28,10 @@ public class Dice : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     { 
-        topFace=1; 
-        forwardFace=4; 
-        backwardFace=3; 
-        rightFace=5; 
-        leftFace=2; 
-        bottomFace=6;
+        allowForward=true;
+        allowBackward=true;
+        allowRight=true;
+        allowLeft=true;
     }
 
     // Update is called once per frame
@@ -38,42 +41,42 @@ public class Dice : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
+            if (!allowLeft) return;
             int tmpFace = topFace;
             topFace = rightFace;
             rightFace = bottomFace;
             bottomFace = leftFace;
             leftFace = tmpFace;
-            Debug.Log(topFace);
             Assemble(Vector3.left);
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            if (!allowRight) return;
             int tmpFace = topFace;
             topFace = leftFace;
             leftFace = bottomFace;
             bottomFace = rightFace;
             rightFace = tmpFace;
-            Debug.Log(topFace);
             Assemble(Vector3.right);
         }
         else if (Input.GetKey(KeyCode.W))
         {
+            if (!allowForward) return;
             int tmpFace = topFace;
             topFace = backwardFace;
             backwardFace = bottomFace;
             bottomFace = forwardFace;
             forwardFace = tmpFace;
-            Debug.Log(topFace);
             Assemble(Vector3.forward);
         }
         else if (Input.GetKey(KeyCode.S))
         {
+            if (!allowBackward) return;
             int tmpFace = topFace;
             topFace = forwardFace;
             forwardFace = bottomFace;
             bottomFace = backwardFace;
             backwardFace= tmpFace;
-            Debug.Log(topFace);
             Assemble(Vector3.back);
             
             
@@ -100,31 +103,4 @@ public class Dice : MonoBehaviour
         StopMoving.Invoke();
     }
 
-    public void DetectFace()
-    {
-        var up = transform.up;
-        var right = transform.right;
-        var forward = transform.forward;
-        // if (transform.up == new Vector3(0f, 1f, 0f))
-        // {
-        //     Debug.Log("face1");
-        // }else if(transform.up == new Vector3(0f, -1f, 0f))
-        // {
-        //     Debug.Log("face6");
-        // }
-        // if (transform.forward == new Vector3(0f, 1f, 0f))
-        // {
-        //     Debug.Log("face4");
-        // }else if(transform.forward == new Vector3(0f, -1f, 0f))
-        // {
-        //     Debug.Log("face3");
-        // }
-        // if (transform.right == new Vector3(0f, 1f, 0f))
-        // {
-        //     Debug.Log("face5");
-        // }else if(transform.right == new Vector3(0f, -1f, 0f))
-        // {
-        //     Debug.Log("face2");
-        // }
-    }
 }
