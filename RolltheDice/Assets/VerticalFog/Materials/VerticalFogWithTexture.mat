@@ -7,13 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:RolltheDice/Assets/White.mat
-  m_Name: White
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-========
   m_Name: VerticalFogWithTexture
   m_Shader: {fileID: 4800000, guid: 0902a13d565c16245a8ecb1a75edd0a1, type: 3}
->>>>>>>> cce1ddc39be9432e80b348ba1425acc8f4af2675:RolltheDice/Assets/VerticalFog/Materials/VerticalFogWithTexture.mat
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -75,10 +70,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-<<<<<<<< HEAD:RolltheDice/Assets/White.mat
-========
     - _DepthFactor: 0.23
->>>>>>>> cce1ddc39be9432e80b348ba1425acc8f4af2675:RolltheDice/Assets/VerticalFog/Materials/VerticalFogWithTexture.mat
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -94,10 +86,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-<<<<<<<< HEAD:RolltheDice/Assets/White.mat
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-========
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Color1: {r: 0.9632353, g: 0.09207394, b: 0.9392035, a: 1}
     - _Color2: {r: 0.50605536, g: 0.5709343, b: 0.88235295, a: 1}
@@ -106,4 +94,3 @@ Material:
     - _EdgeColor: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FogAnimationSpeed: {r: -5, g: 3, b: 4, a: -5}
->>>>>>>> cce1ddc39be9432e80b348ba1425acc8f4af2675:RolltheDice/Assets/VerticalFog/Materials/VerticalFogWithTexture.mat
